@@ -1,0 +1,230 @@
+canvas {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: #000;
+  padding-top: 100px;
+}
+
+a {
+  text-decoration: none;/*Quitarle lineas a los link*/
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+a[name="aboutE"] {
+  scroll-margin-top: 100px;
+}
+a[name="Structure-and-Surface"] {
+  scroll-margin-top: 95px;
+}
+a[name="timeE"] {
+  scroll-margin-top: 65px;
+}
+a[name="neighborsE"] {
+  scroll-margin-top: 40px;
+}
+
+/*Para el NAV*/
+.top-header {
+  /* background: #000; */
+  position: fixed;
+  background: #000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.top-header div {
+  padding: 10px;
+}
+
+.top-nav {
+  display: flex;/*Poner los elementos en fila*/
+  justify-content: space-between;/*Dar espacio entra ambos elementos*/
+  padding: 10px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.logoUDG {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;/*16px*/
+  color: #fff;
+}
+
+/*Para el Menu*/
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  padding: 0 15px;
+}
+.menu a {
+  color: #fff;
+  font-size: 15px;
+  line-height: 75px;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 10px;
+}
+.menu a:hover{
+  background: rgb(22, 4, 182);
+}
+
+/*Diseño para dispositivos moviles*/
+.open-menu, .close-menu {
+  display: none;
+}
+
+/*Para la informacion dentro de la página*/
+.about {
+  position: relative;
+  left: 5px;
+  width: 700px;
+  height: fit-content;
+  padding: 15px;
+  text-align: justify;
+  border-radius: 10px;
+
+  color: #fff;
+  background: rgba(36, 35, 35, 0.616);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
+.S-S {
+  position: relative;
+  margin: auto;
+  top: 25px;
+  width: 580px;
+  height: fit-content;
+  padding: 15px;
+  text-align: justify;
+  border-radius: 10px;
+  /* float: right; */
+  left: -5px;
+
+  color: #fff;
+  background: rgba(36, 35, 35, 0.616);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
+.time {
+  position: relative;
+  left: 50px;
+  top: 50px;
+  width: 450px;
+  height: fit-content;
+  padding: 15px;
+  text-align: justify;
+  border-radius: 10px;
+
+  color: #fff;
+  font-style: normal;
+  background: rgba(36, 35, 35, 0.616);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
+.vecinos {
+  position: relative;
+  margin: auto;
+  top: 80px;
+  width: fit-content;
+  height: fit-content;
+  padding: 15px;
+  text-align: justify;
+  border-radius: 10px;
+
+  color: #fff;
+  background: rgba(36, 35, 35, 0.616);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
+.about h2, .S-S h2, .time h2, .vecinos h2 {
+  text-align: center;
+}
+
+/*La parte responsiva*/
+@media screen and (max-width: 950px){/*Si los dispositvos tienen un ancho desde 0px hasta 950px*/  
+  /*Menu*/
+  .menu {
+    flex-direction: column;/*Acomodarlos en una columna*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    overflow-y: auto;
+    opacity: 0;
+    background: #000;
+    pointer-events: none;
+    transition: opacity 0.2s;
+  }
+  .menu li {
+    padding: 0;
+  }
+  .menu a {
+    color: #fff;
+    font-size: 20px;
+    line-height: 85px;
+    text-transform: uppercase;
+  }
+  .open-menu, .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }  
+  .close-menu {
+    align-self: flex-end;
+    padding: 30px 15px;
+    background-color: #000;
+  }
+  .open-menu {
+    background: none;
+  }
+
+  .menu_opened {/*Cuando el menu este abierto*/
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible){
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .about, .S-S, .time, .vecinos {
+    /* background-color: #000; */
+    width: auto;
+    left: 0px;
+    text-align: justify;
+  }
+
+  .vecinos img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+  <script defer src="function.js"></script>
+
+  <title>FAER</title>
+</head>
+
+<body>
+
+  <canvas id="bg"></canvas>
+
+  <!--El NAV-->
+  <header class="top-header">
+    <nav class="top-nav">
+      <a href="#" class="logoUDG">
+        <img height="75" width="55"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Escudo_UdeG.svg/1200px-Escudo_UdeG.svg.png"
+          alt="UDG">
+        <div>
+          Fabián Esqueda
+        </div>
+      </a>
+      <!--Boton para abrir el menu en dispositivos moviles-->
+      <button class="open-menu" aria-label="Abrir menú">
+        <img width="30" height="40" src="blanco-h.png" alt="Abrir menú">
+      </button>
+      <ul class="menu">
+        <button class="close-menu" aria-label="Cerrar menú">
+          <img src="close-icon.svg" alt="Cerrar menú">
+        </button>
+        <li><a href="#aboutE">About</a></li>
+        <li><a href="#Structure-and-Surface">Estructura</a></li>
+        <li><a href="#timeE">Tiempo</a></li>
+        <li><a href="#neighborsE">Vecinos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--Seccion para las tarjetas-->
+  <div class="cont">
+    <a name="aboutE"></a>
+    <div class="about">
+      <h2>🌎Todo sobre la Tierra🌎</h2>
+      <p>
+        Nuestro hogar, el planeta Tierra, es un planeta terrestre y rocoso. Tiene una superficie sólida y activa, con
+        montañas, valles, cañones, llanuras y mucho más. La Tierra es especial porque es un planeta océano, ya que el
+        agua
+        cubre el 70% de su superficie.
+      </p>
+      <p>
+        Nuestra atmósferaestá compuesta, en gran parte, por nitrógeno. También tiene mucho oxígeno, que nos permite
+        respirar. Además, nos protege de los meteoroides que se acercan a la Tierra, la mayoría de los cuales se
+        desintegran en nuestra atmósfera antes de llegar a la superficie en forma de meteoritos.
+      </p>
+      <p>
+        Es posible que, como se trata de nuestro hogar, pienses que lo sabemos todo sobre la Tierra. ¡La verdad es que
+        no!
+        Aún nos queda mucho por aprender sobre nuestro planeta. Actualmente, hay muchos satélites en órbita alrededor de
+        la Tierra, tomando fotos y realizando mediciones. Esto nos permite saber más cosas sobre el clima, los océanos,
+        la
+        tierra, el cambio climático y muchos otros temas importantes.
+      </p>
+    </div>
+
+    <a name="Structure-and-Surface"></a>
+    <div class="S-S">
+      <h2>⛰️Estructura Y Superficie⛰️</h2>
+      <ul class="lista">
+        <li>La Tierra es un planeta terrestre. Es pequeño y rocoso.</li>
+        <br>
+        <li>La atmósfera terrestre tiene el grosor perfecto para mantener la temperatura templada del planeta, para que
+          seres vivos como nosotros podamos vivir en él. Es el único planeta de nuestro sistema solar que sabemos que
+          tiene las condiciones necesarias para que haya vida. Está compuesto por nitrógeno, en su mayor parte, pero
+          tiene una buena cantidad de oxígeno, que es lo que nos permite respirar.</li>
+      </ul>
+    </div>
+
+    <a name="timeE"></a>
+    <div class="time">
+      <h2>🕛Tiempo en la tierra🕛</h2>
+      <ul class="timeE">
+        <li>Un día en la Tierra dura algo menos de 24
+          horas.</li>
+        <br>
+        <li><a href="https://spaceplace.nasa.gov/years-on-other-planets/sp" target="_blank">Un año en la Tierra</a> dura
+          365,25 días.
+          Ese 0,25 extra hace que cada 4 años tengamos que añadir
+          un día más al calendario. Ese año se llama
+          <a href="https://spaceplace.nasa.gov/leap-year/sp" target="_blank">año bisiesto.</a>
+        </li>
+      </ul>
+    </div>
+
+    <a name="neighborsE"></a>
+    <div class="vecinos" id="#neighborsE">
+      <h2>🪐Vecinos de la Tierra🌙</h2>
+      <ul class="vecinosN">
+        <li>La Tierra es el único planeta que tiene solo una luna.</li>
+        <br>
+        <img width="150px" src="http://assets.stickpng.com/images/58f9fde10ed2bdaf7c12832d.png" alt="luna">
+        <br><br>
+        
+        <li>La Tierra tiene muchos satélites que la observan y la estudian. Aún nos falta mucho por aprender sobre
+          nuestro planeta.</li>
+        <br>
+        <img width="400px" src="https://www.grupoaseguranza.com/adjuntos/fichero_26755_20180717.jpg" alt="satelites">
+        <br><br>
+
+        <li>La Tierra es el tercer planeta desde el Sol en nuestro sistema solar. Así, nuestros vecinos más cercanos son
+        Venus y Marte.</li>
+        <br>
+        <img width="400px" src="https://peru21.pe/resizer/W5wlxjPs_iFea-yA9_Rav1o03UU=/980x0/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/GAILQDCMDFDGRP6T6GRZGDGC5A.jpg" alt="vecinos de la tierra">
+      </ul>
+    </div>
+
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
